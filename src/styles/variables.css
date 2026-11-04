@@ -1,0 +1,14 @@
+:root {
+  color-scheme: dark;
+  --color-background: #090909;
+  --color-wine: #630f21;
+  --color-rose: #a51c30;
+  --color-leaf: #273b30;
+  --color-text: #e8ddd2;
+  --color-text-muted: #8e8583;
+  --font-display: "Bodoni MT", "Didot", "Times New Roman", serif;
+  --space-small: 0.75rem;
+  --space-page: clamp(1.5rem, 5vw, 4rem);
+  --layer-canvas: 0;
+  --layer-content: 1;
+}
