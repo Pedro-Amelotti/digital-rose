@@ -17,6 +17,12 @@ npm run build
 npm run preview
 ```
 
+## Publicação no GitHub Pages
+
+Em **Settings → Pages → Build and deployment**, selecione **GitHub Actions** como fonte. A cada push na branch `main`, ou por execução manual em **Actions → Deploy GitHub Pages**, o workflow instala as dependências, gera o site e publica somente o conteúdo de `dist/`. A pasta gerada continua fora do Git.
+
+O build do workflow usa o nome do repositório como caminho base. Para o repositório atual, o endereço esperado é `https://pedro-amelotti.github.io/digital-rose/` após a configuração e a primeira publicação bem-sucedida. Caso seja configurado um domínio personalizado, ajuste o caminho base do build no workflow para `/`.
+
 ## Revisão de buquês
 
 Use `?gen=1` (ou qualquer inteiro de 1 a 12, por exemplo `?gen=12`) para abrir uma galeria com 12 buquês diferentes já florescidos. Cada cartão permite gerar outro buquê; o botão superior troca todos. Sem o parâmetro, ou com valor inválido, a página mantém a experiência original com um buquê animado. O número ativa a galeria e não controla a quantidade de cartões.
